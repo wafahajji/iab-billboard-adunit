@@ -2,10 +2,6 @@
 
 = Billboard Unit : HTML / JS Based Close Button Solution =
 
-=== Details ===
-
-This solution will only trigger an ad request and impression increment on first visit to the page and any subsequent visits when last page visit was set to the expanded state. Visibility defaults to the full Billboard execution on first visit of the day, while setting a cookie with the current state, expiring at midnight. On revisit to the page, users will receive either the full Billboard or the unbranded show button, depending on the state they last selected. Show button exists within the HTML page content.
-
 === Assumptions ===
 
 While logic shown here can be applied across any solution, the technology utilized in the sample files assumes implementation of DoubleClick rich media technology and adherence to standard sizes acceptable through the [http://www.iab.net/risingstars IAB] for this ad unit.
