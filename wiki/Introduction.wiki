@@ -1,14 +1,12 @@
-#summary This wiki will demonstrate the coding involved with setting up two different implementations of communication between a Flash unit and site hosted JavaScript.
+#summary Summary of project intentions.
 
 = Introduction =
 
-Using similar methods and logic, this project will focus on communication between a Flash file and site hosted JavaScript. This script will set or receive browser cookie values, which will be returned to Flash and/or JavaScript to determine the appropriate display state and/or HTML display settings via CSS attributes.
+This wiki will demonstrate the coding involved with setting up two different implementations of communication between a Flash unit and site hosted JavaScript. Using similar methods and logic, this project will focus on communication between a Flash file and site hosted JavaScript. This script will set or receive browser cookie values, which will be returned to Flash and/or JavaScript to determine the appropriate display state and/or HTML display settings via CSS attributes.
 
 = Details =
 
 *Flash Billboard Unit with Branded Flash Based Close Button Solution*
-
-
 
 *Flash Billboard Unit with Unbranded HTML Based Close Button Solution*
 
