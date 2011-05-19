@@ -1,0 +1,52 @@
+#summary One-sentence summary of this page.
+
+= Billboard Unit : Flash Based Close Button Solution =
+
+=== Details ===
+
+This solution will trigger an ad request and impression increment on every visit to the page. Visibility defaults to the full Billboard execution on first visit of the day, while setting a cookie with the current state, expiring at midnight. On revisit to the page, users will receive either the full Billboard or the unbranded show button, depending on the state they last selected. Show button exists in the Flash execution.
+
+=== Workflow ===
+
+*On Page Load*
+  # HTML page completes load.
+  # iframe is created and appended to ad unit div.
+  # Ad tag is loaded into iframe (*impression +1*).
+  # External interface call is made from Flash to JS function on page requesting cookie value.
+  # JS function checks for cookie existence / value and returns to Flash.
+
+  * *Cookie exists : value is expanded*
+    # Rich media Flash unit is set to expanded 970x250 state
+    # Full billboard creative assets are loaded into ad tag through Flash parent file 
+    # Ad unit div dimensions are defined to 970x250
+ 
+  * *Cookie exists : value is collapsed*
+    # Rich media Flash unit is set to collapsed 196x31 state
+    # Collapsed show ad button creative assets are loaded into ad tag through Flash parent file
+    # Ad unit div dimensions are defined to 300x31 and positioned to the right of the page
+
+  * *Cookie does not exist*
+    # JS sets cookie with value of expanding, expiring at midnight
+    # Rich media Flash unit is set to expanded 970x250 state
+    # Full billboard creative assets are loaded into ad tag through Flash parent file 
+    # Ad unit div dimensions are defined to 970x250
+
+*On Click to Close Button from Flash*
+  # External interface call is made to JS to collapse.
+  # JS resets cookie value to collapsed.
+  # Rich media Flash unit is set to collapsed 196x31 state
+  # Collapsed show ad button creative assets are loaded into ad tag through Flash parent file
+  # Ad unit div dimensions are defined to 300x31 and positioned to the right of the page
+
+*On Click to Show Button from Flash*
+  # External interface call is made to JS to expand.
+  # JS resets cookie value to expanded.
+  # Rich media Flash unit is set to expanded 970x250 state
+  # Full billboard creative assets are loaded into ad tag through Flash parent file 
+  # Ad unit div dimensions are defined to 970x250
+
+=== Source Code ===
+
+  * AS 3.0
+  * HTML / JS
+  * CSS
