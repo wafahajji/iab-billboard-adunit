@@ -1,4 +1,4 @@
-#summary CSS used in the Flash Close Button implementation.
+#summary CSS used in the HTML Close Button implementation.
 
 == HTML / JavaScript ==
 
