@@ -1,0 +1,1 @@
+# Details and logic of this particular Flash based close button solution.
