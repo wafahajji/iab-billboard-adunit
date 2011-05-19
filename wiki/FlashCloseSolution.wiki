@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Details and logic of this particular Flash based close button solution.
 
 = Billboard Unit : Flash Based Close Button Solution =
 
