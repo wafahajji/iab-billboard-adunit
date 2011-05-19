@@ -1,3 +1,11 @@
+#summary CSS used in the Flash Close Button implementation.
+
+== HTML / JavaScript ==
+
+Sample CSS here represents an example of what a stylesheet may look like. This version works well with the HTML demo files. 
+
+==== Sample Site Script ====
+
 {{{
 
 #adUnit{
