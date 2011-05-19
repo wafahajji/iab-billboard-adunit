@@ -6,7 +6,11 @@
 
 This solution will trigger an ad request and impression increment on every visit to the page. Visibility defaults to the full Billboard execution on first visit of the day, while setting a cookie with the current state, expiring at midnight. On revisit to the page, users will receive either the full Billboard or the unbranded show button, depending on the state they last selected. Show button exists in the Flash execution.
 
-=== Workflow ===
+=== Assumptions ===
+
+While logic shown here can be applied across any solution, the technology utilized in the sample files assumes implementation of DoubleClick rich media technology and adherence to standard sizes acceptable through the [http://www.iab.net/risingstars IAB] for this ad unit.
+
+=== Logic ===
 
 *On Page Load*
   # HTML page completes load.
