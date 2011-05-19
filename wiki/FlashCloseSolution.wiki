@@ -51,6 +51,6 @@ While logic shown here can be applied across any solution, the technology utiliz
 
 === Source Code ===
 
-  * AS 3.0
-  * HTML / JS
-  * CSS
+  * [http://code.google.com/p/iab-billboard-adunit/wiki/FlashCloseSolutionAS AS 3.0]
+  * [http://code.google.com/p/iab-billboard-adunit/wiki/FlashCloseSolutionHTML HTML / JS]
+  * [http://code.google.com/p/iab-billboard-adunit/wiki/FlashCloseSolutionCSS CSS]
