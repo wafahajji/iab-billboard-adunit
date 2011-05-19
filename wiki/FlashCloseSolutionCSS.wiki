@@ -4,7 +4,7 @@
 
 Sample CSS here represents an example of what a stylesheet may look like. This version works well with the HTML demo files. 
 
-==== Sample Site Script ====
+==== Sample Style Sheet ====
 
 {{{
 
