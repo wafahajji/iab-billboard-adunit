@@ -1,6 +1,6 @@
-#summary ActionScript 3.0 used in the Flash Close Button implementation.
+#summary ActionScript 3 used in the Flash Close Button implementation.
 
-== ActionScript 3.0 ==
+== ActionScript 3 ==
 
 Flash was broken up into three separate files. The parent file acts as the main loader which communcates with the children as well as the JavaScript on the page. Two child files exist : collapsed version which contains show button creative and another with full Billboard creative. Flash is depending on certain elements within the FLA files (i.e. DoubleClick components, etc.)
 
