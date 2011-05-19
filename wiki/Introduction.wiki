@@ -8,7 +8,7 @@ Using similar methods and logic, this project will focus on communication betwee
 
 *Flash Billboard Unit with Branded Flash Based Close Button Solution*
 
-This solution will trigger an ad request and impression increment on every visit to the page. Visibility defaults to the full Billboard execution on first visit of the day, while setting a cookie with the current state, expiring at midnight. On revisit to the page, users will receive either the full Billboard or the [un]branded show button, depending on the state they last selected. Show button exists in the Flash execution.
+This solution will trigger an ad request and impression increment on every visit to the page. Visibility defaults to the full Billboard execution on first visit of the day, while setting a cookie with the current state, expiring at midnight. On revisit to the page, users will receive either the full Billboard or the unbranded show button, depending on the state they last selected. Show button exists in the Flash execution.
 
 
 *Flash Billboard Unit with Unbranded HTML Based Close Button Solution*
