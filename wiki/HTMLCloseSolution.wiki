@@ -1,1 +1,58 @@
-# Details and logic of this particular Flash based close button solution.
+#summary Details and logic of this particular Flash based close button solution.
+
+= Billboard Unit : HTML / JS Based Close Button Solution =
+
+=== Details ===
+
+This solution will only trigger an ad request and impression increment on first visit to the page and any subsequent visits when last page visit was set to the expanded state. Visibility defaults to the full Billboard execution on first visit of the day, while setting a cookie with the current state, expiring at midnight. On revisit to the page, users will receive either the full Billboard or the unbranded show button, depending on the state they last selected. Show button exists within the HTML page content.
+
+=== Assumptions ===
+
+While logic shown here can be applied across any solution, the technology utilized in the sample files assumes implementation of DoubleClick rich media technology and adherence to standard sizes acceptable through the [http://www.iab.net/risingstars IAB] for this ad unit.
+
+=== Logic ===
+
+*On Page Load*
+  # HTML page completes load.
+  # Javascript function is called to check for cookie existence.
+
+  * *Cookie exists : value is expanded*
+    # Show ad button div display is is hidden
+    # Ad unit div dimensions are defined to 970x250
+    # iframe is created and appended to ad unit div
+    # Ad tag is loaded into iframe (*impression +1*)
+ 
+  * *Cookie exists : value is collapsed*
+    # Image is appended to show button div
+    # show button div display is set to visible
+    # show button div dimensions are defined to 300x31
+
+  * *Cookie does not exist*
+    # JS sets cookie with value of expanding, expiring at midnight
+    # Ad unit div dimensions are defined to 970x250
+    # Show ad button div display is is hidden
+    # iframe is created and appended to ad unit div
+    # Ad tag is loaded into iframe (*impression +1*)
+
+*On Click to Close Button from Flash*
+  # External interface call is made to JS function on page.
+  # JS function checks cookie : value is expanded, collapse called
+  # Image is appended to show button div
+  # Show button div display is set to visible
+  # Show button div dimensions are defined to 300x31
+  # iframe is removed from ad unit div
+  # Cookie is set to collapsed
+
+*On Click to Show Button from HTML*
+  # JS function is called to check cookie : value is collapsed, expand called
+  # Show ad button div display is is hidden
+  # Ad unit div dimensions are defined to 970x250
+  # iframe is created and appended to ad unit div
+  # Ad tag is loaded into iframe
+  # Cookie is set to expanded
+
+=== Source Code ===
+
+  * [http://code.google.com/p/iab-billboard-adunit/wiki/HTMLCloseSolutionAS AS 3.0]
+  * [http://code.google.com/p/iab-billboard-adunit/wiki/HTMLCloseSolutionHTML HTML / JS]
+  * [http://code.google.com/p/iab-billboard-adunit/wiki/HTMLCloseSolutionCSS CSS]
